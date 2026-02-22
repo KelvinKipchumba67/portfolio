@@ -2,7 +2,8 @@
 
 Welcome to my personal portfolio website. This site showcases who I am as a **Front-End Developer** and **Graphics Designer**. It includes sections about my background, skills, education, and some of the projects I've worked on.
 visit the page with this link:https://www.kelvinkipchumba.dev/
-##  Project Structure
+
+## Project Structure
 
 This is a static HTML/CSS/JS website with the following sections:
 
@@ -11,6 +12,7 @@ This is a static HTML/CSS/JS website with the following sections:
 - **Skills**
 - **Educational Background**
 - **Projects**
+- **Blogs**
 - **Contact Me**
 
 ---
@@ -21,7 +23,7 @@ This is a static HTML/CSS/JS website with the following sections:
 - Creative and intuitive UI design
 - Detailed educational background cards
 - Showcases real design and development projects
-- Includes a functional contact form layout
+- Includes a functional contact form layout and a Blog
 - Back to Top navigation for easy scrolling
 
 ---
@@ -30,31 +32,31 @@ This is a static HTML/CSS/JS website with the following sections:
 
 - **HTML5**
 - **CSS**
+- **Javascript**
 - **Figma** (for design assets)
 - **Adobe Illustrator & Photoshop** (for branding & graphics)
 
 ---
 
-##  Learning Goals
+## Learning Goals
 
 This project also reflects my journey as a developer. I’m currently learning:
 
-- **Flask (Python Web Framework)**
-- **Python**
-- **MySQL**
+- **Devops Engineering**
+- **Java**
+- **Frontend Frameworks: Typescript**
 
 ---
 
-##  Projects Displayed
+## Projects Displayed
 
-| Project                     | Description                                                                 |
-|----------------------------|-----------------------------------------------------------------------------|
-| Recipe Book                | A simple HTML/CSS recipe gallery                                            |
-| Disko Light Effect         | Dynamic visual effect using JS and CSS                                     |
-| Captcha Generator          | Basic random captcha generator using JavaScript                            |
-| Background Animation Page  | Hover-based background animation using JS                                  |
-| Password Generator         | Random secure password generator                                           |
-| Brand Identity Design      | Ongoing design project using Illustrator & Photoshop                       |
+| Project               | Description                                                                                                                |
+| --------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| UjamaaFlow            | Ujamaaflow is a web application that is designed to link resource donors with individuals and families in need.            |
+| Pulse Square          | PulseSquare is a MERN-based platform that helps users find reliable local services when traveling or moving to new places. |
+| Task Quest            | A modern, responsive web application for task management with Firebase authentication and real-time data visualization.    |
+| NouvelBRc             | NouvelBRc is a digital sanctuary for introverts to connect through the quiet power of reading.                             |
+| Brand Identity Design | Ongoing design project using Illustrator & Photoshop                                                                       |
 
 ---
 
@@ -62,17 +64,10 @@ This project also reflects my journey as a developer. I’m currently learning:
 
 Feel free to reach out:
 
-- 📧 **Email**: [k57494429@gmail.com]  
-- 📍 **Location**: Nairobi, Kenya  
-- 💼 **LinkedIn**: [https://www.linkedin.com/in/kelvin-kipchumba-a03980332/] 
+- 📧 **Email**: [kelvinkipchumba935@gmail.com]
+- 📍 **Location**: Nairobi, Kenya
+- 💼 **LinkedIn**: [https://www.linkedin.com/in/kelvin-kipchumba-a03980332/]
 - 💻 **GitHub**: (https://github.com/KelvinKipchumba67)
-visit the page with this link:https://wondrous-lamington-a13d7b.netlify.app/
+  visit the page with this link:https://www.kelvinkipchumba.dev/
 
 ---
-
-## 📌 How to Run Locally
-
-```bash
-git clone https://github.com/KelvinKipchumba67/Plp-portfolio-hackathon.git
-cd KelvinKipchumba67/Plp-portfolio-hackathon
-open index.html
