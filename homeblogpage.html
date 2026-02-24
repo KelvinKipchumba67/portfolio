@@ -34,7 +34,7 @@
           <p class="excerpt">In the modern professional landscape, we are rarely single-threaded. We are founders who also code, managers who also design, or freelancers juggling four different client ecosystems...</p>
         </div>
         <div class="image-box">
-          <img src="img/context.jpg" alt="Espresso Machine">
+          <img src="img/context.jpg" alt="Espresso Machine" loading="lazy">
         </div>
       </div>
       </a>
@@ -50,7 +50,7 @@
           <p class="excerpt">In the modern digital ecosystem, no application is an island. A mobile weather app doesn't measure atmospheric pressure itself; it asks a specialized service.</p>
         </div>
         <div class="image-box">
-          <img src="img/APIS.png" alt="API Architecture">
+          <img src="img/APIS.png" alt="API Architecture" loading="lazy">
         </div>
       </div>
       </a>
@@ -68,7 +68,7 @@
           <p class="excerpt">Brand identity is more than a logo—learn how typography, color, and consistency build trust.</p>
         </div>
         <div class="image-box">
-          <img src="img/branding.jpg" alt="Branding">
+          <img src="img/branding.jpg" alt="Branding" loading="lazy" >
         </div>
       </div>
       </a>
@@ -85,119 +85,6 @@
   <div class="swiper-pagination" aria-label="Slider pagination"></div>
 </div>
 
-<!-- <section class="home" id="home">
-        <div class="home-text container">
-            <h2 class="home-title">Trend Blogger</h2>
-            <span class="home-subtitle">Your source of great content</span>
-        </div>
-</section> -->
-
-<!-- Articles section BEWARE this is my word processor, now you know -->
- <!--articles closed for a sec do not worry-->
-
-<!-- <article style="max-width: 800px; margin: 40px auto; background: var(--card-bg); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-        
-        <header style="margin-bottom: var(--spacing-lg);">
-            <span style="color: var(--primary-color); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Development</span>
-            <h1 style="font-family: var(--font-heading); font-size: 2.5rem; margin-top: 10px;">The Definitive Guide to APIs</h1>
-            <p style="color: var(--text-secondary);">Published on February 16, 2026 by Kelvin</p>
-         </header>
-         <img src="img/api.webp" alt="API Architecture" style="width: 100%; border-radius: var(--radius-md); margin-bottom: var(--spacing-lg);">
-
-<div class="content" style="line-height: 1.8; font-size: 1.1rem;">
-            
-<p>If you have ever booked a flight, paid for a coffee with your phone, or simply liked a tweet, you have used an API. In the world of software, APIs (Application Programming Interfaces) are the unsung heroes. They are the digital glue that holds the internet together, allowing different applications to talk to each other. But for developers in 2026, APIs are no longer just about connecting a frontend to a database they are the building blocks of the AI economy. Whether you are a Computer Science student or a budding Full Stack Engineer, understanding APIs is non-negotiable. Here is everything you need to know.1. What is an API? (The "Restaurant" Analogy)At its core, an API is a messenger that takes requests and tells a system what you want to do, then returns the response back to you. Think of it like a restaurant: You (The Client): You are sitting at the table with a menu. The Kitchen (The Server): This is where the food (data) is prepared. The Waiter (The API): You cannot just walk into the kitchen and start cooking. You need the waiter to take your order (request), bring it to the kitchen, and bring the food back to you (response).In technical terms, an API defines a set of rules that allow one piece of software to interact with another. It abstracts away the complexity of the "kitchen" so you don't need to know how the database works—you just need the data. The Anatomy of an API Request When you interact with an API (specifically REST APIs), you are usually constructing an HTTP request. This request has four main parts: 
-A. The Endpoint (The Address)This is the URL where the API lives.https://api.example.com/v1/users
-B. The Method (The Verb)This tells the API what action you want to perform. GET: Retrieve data (e.g., Get a list of users).POST: Send new data (e.g., Create a new user).PUT/PATCH: Update existing data (e.g., Change a user's email).DELETE: Remove data (e.g., Delete a user).
-C. The Headers (The Metadata)These provide extra information, such as authentication tokens (to prove who you are) or content types. Authorization: Bearer <token>Content-Type: application/json.
-D. The Body (The Data)Used mainly in POST and PUT requests, this is the actual data you are sending, usually formatted as JSON.JSON{
-  "username": "CodeMaster2026",
-  "email": "dev@chukau.ac.ke",
-  "role": "admin"
-}
-3. Speaking the Language: Status CodesAPIs communicate success and failure through three-digit numbers called HTTP status codes. Knowing these by heart is a superpower for debugging.CodeMeaningTranslation200OK"Success! Here is your data."201Created"Success! I built the thing you asked for."400Bad Request" You sent me garbage data."401Unauthorized"Who are you? Log in first."403Forbidden"I know who you are, but you aren't allowed here."404Not Found" I can't find what you're looking for."500Internal Server Error" My bad. The server crashed."4. REST vs. GraphQL: The Great DebateFor years, REST (Representational State Transfer) has been the standard. It is structured, resource-based, and uses standard HTTP methods. However, GraphQL has become a favorite for frontend developers. REST is like ordering a set meal. You get the burger, fries, and drink, even if you only wanted the burger. (This is called over-fetching). GraphQL is like a buffet. You ask specifically for just the burger, and the API gives you exactly that. Which one should you learn? Start with REST. It is foundational. Once you master it, learn GraphQL for complex, data-heavy applications.
-5. The Future: APIs in the Age of AI (2026)We are currently seeing a shift toward Agentic APIs.
-In the past, APIs were built for human developers to read documentation and integrate. Today, we are building APIs that AI Agents can discover and use autonomously. Protocols like the Model Context Protocol (MCP) are emerging, allowing AI models to "plug in" to your API to perform tasks like booking a venue or querying a database without a human explicitly writing every line of glue code. Quick Example: A Simple Express.js Route If you are building a backend with Node.js, here is what a simple API endpoint looks like: JavaScript// A simple GET endpoint to fetch user data
-app.get('/api/users/:id', (req, res) => {
-    const userId = req.params.id;
-    
-    // Simulate finding a user
-    const user = database.find(u => u.id === userId);
-
-    if (user) {
-        res.status(200).json(user);
-    } else {
-        res.status(404).json({ message: "User not found" });
-    }
-});
-Conclusion APIs are more than just technical definitions; they are products. Whether you are building a side project or leading a tech team, treating your API with care designing it to be clean, secure, and documented is what separates a coding hobbyist from a professional engineer. Ready to build? Open your code editor and create your first endpoint today.
-
-</p>
-            
-<h2 style="margin-top: var(--spacing-lg);">The Restaurant Analogy</h2>
-<p>API as a Restaurant Waiter
-Think of an API like a waiter in a restaurant:
-
-You (the customer) are the user or app making a request. 
-The waiter (the API) takes your order (request) and delivers it to the kitchen (server). 
-The kitchen (server) prepares your meal (processes data or performs a task). 
-The waiter brings the finished meal (response) back to you. 
-This analogy shows how APIs act as intermediaries, allowing systems to communicate without exposing internal complexity. 
-</p>
-</div>
-
-</article>
-
-<article style="max-width: 800px; margin: 40px auto; background: var(--card-bg); padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
-        
-<header style="margin-bottom: var(--spacing-lg);">
-    <span style="color: var(--primary-color); font-weight: bold; text-transform: uppercase; font-size: 0.8rem;">Design</span>
-    <h1 style="font-family: var(--font-heading); font-size: 2.5rem; margin-top: 10px;">Crafting a Visual Voice: The Essentials of Brand Identity</h1>
-    <p style="color: var(--text-secondary);">Published on February 16, 2026 by Kelvin</p>
-</header>
-<img src="img/branding.jpg" alt="Branding" style="width: 100%; border-radius: var(--radius-md); margin-bottom: var(--spacing-lg);">
-
-<div class="content" style="line-height: 1.8; font-size: 1.1rem;">
-    <p>
-Introduction
-Brand identity is much more than just a logo; it is the entire visual language that communicates who a business is and what it stands for. As a graphics designer, I view identity design as a bridge between a company’s mission and its audience’s perception. Whether I'm working in Adobe Illustrator or creating mockups in Photoshop, the goal remains the same: consistency and impact.
-
-1. The Core Components
-To build a comprehensive brand, you must look beyond the mark:
-
-Logo Design: The primary symbol that serves as the "face" of the brand. I typically build these in Illustrator to ensure they are scalable vectors.
-
-Typography: Selecting fonts that carry the right "mood"—for example, a clean Sans Serif like Plus Jakarta Sans often feels modern and tech-focused.
-
-Color Palette: Colors evoke emotion. A tech brand might use deep blues for trust (like the PulseSquare project) or vibrant cyans for innovation.
-
-Imagery & Iconography: A consistent style for icons and photos ensures that even without a logo, the brand is recognizable.
-
-2. My Design Process
-My approach to branding, such as my recent work on the Computer Science Academy Africa booklet, follows a specific workflow:
-
-Discovery: Understanding the mission—is it educational, corporate, or community-driven?.
-
-Visual Research: Creating mood boards to define the aesthetic direction.
-
-Vector Construction: Sketching and refining logos in Adobe Illustrator for precision.
-
-Mockup & Application: Using Photoshop to place the brand in real-world contexts, such as business cards, apparel, or web interfaces.
-
-3. The Role of the Brand Booklet
-A Brand Identity Booklet (or Style Guide) is the "rulebook" for the brand. It ensures that when other developers or designers work on the project, the brand stays unified. It includes:
-
-Clearance zones for the logo.
-
-Specific HEX and RGB color codes.
-
-Guidelines on what not to do with the brand assets.
-
-Conclusion
-In a digital-first world, a strong brand identity is what separates a professional entity from a hobbyist project. By combining strategic design with technical execution, we create experiences that last
-    </p>
-</div>
-</article> -->
 
 
 <!-- Blog cards (styled like screenshot) -->
@@ -206,7 +93,7 @@ In a digital-first world, a strong brand identity is what separates a profession
 
     <article class="blog-card">
       <a class="blog-card__media" href="#" aria-label="Read article: Why 'Dune' is Better in a Group">
-        <img src="img/pic.jpg" alt="">
+        <img src="img/pic.jpg" alt="" loading="lazy">
         <span class="blog-card__tag">Discussion</span>
       </a>
       <div class="blog-card__body">
@@ -222,7 +109,7 @@ In a digital-first world, a strong brand identity is what separates a profession
 
     <article class="blog-card">
       <a class="blog-card__media" href="#" aria-label="Read article: Interview with Andy Weir">
-        <img src="img/APIS.png" alt="">
+        <img src="img/APIS.png" alt="" loading="lazy">
         <span class="blog-card__tag">APIs</span>
       </a>
       <div class="blog-card__body">
@@ -238,7 +125,7 @@ In a digital-first world, a strong brand identity is what separates a profession
 
     <article class="blog-card">
       <a class="blog-card__media" href="#" aria-label="Read article: Top 5 Cozy Reading Spots">
-        <img src="img/branding.jpg" alt="">
+        <img src="img/branding.jpg" alt="" loading="lazy">
         <span class="blog-card__tag">Brand Identity</span>
       </a>
       <div class="blog-card__body">
