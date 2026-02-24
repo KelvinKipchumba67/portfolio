@@ -17,7 +17,7 @@ body {
 /* 1. The Background Image Section */
 .hero-section {
   height: 450px;
-  background:url('/img/branding.jpg') no-repeat center center/cover;
+  background:url('/img/brand2.webp') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@ body {
 
 .hero-section-design{
   height: 450px;
-  background:url('/img/brand.jpg') no-repeat center center/cover;
+  background:url('/img/branding2.webp') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@ body {
 }
 .hero-section-context{
   height: 450px;
-  background:url('/img/pic.jpg') no-repeat center center/cover;
+  background:url('/img/pic.webp') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +45,7 @@ body {
 }
 .hero-section-apis{
   height: 450px;
-  background:url('/img/APIS.png') no-repeat center center/cover;
+  background:url('/img/apis2.webp') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
