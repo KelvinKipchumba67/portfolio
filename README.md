@@ -1,6 +1,7 @@
 # Kelvin Kipchumba – Portfolio Website
 
-Welcome to my personal portfolio website. This site showcases who I am as a **Front-End Developer** and **Graphics Designer**. It includes sections about my background, skills, education, and some of the projects I've worked on.
+Welcome to my personal portfolio website. This site showcases who I am as a **Full-Stack Developer** and **Graphics Designer**. It includes sections about my background, skills, education, and some of the projects I've worked on.
+
 visit the page with this link:https://www.kelvinkipchumba.dev/
 
 ## Project Structure
@@ -34,7 +35,7 @@ This is a static HTML/CSS/JS website with the following sections:
 - **CSS**
 - **Javascript**
 - **Figma** (for design assets)
-- **Adobe Illustrator & Photoshop** (for branding & graphics)
+- **Adobe Illustrator & Photoshop** (for branding, design assets & graphics)
 
 ---
 
@@ -65,9 +66,7 @@ This project also reflects my journey as a developer. I’m currently learning:
 Feel free to reach out:
 
 - 📧 **Email**: [kelvinkipchumba935@gmail.com]
-- 📍 **Location**: Nairobi, Kenya
 - 💼 **LinkedIn**: [https://www.linkedin.com/in/kelvin-kipchumba-a03980332/]
-- 💻 **GitHub**: (https://github.com/KelvinKipchumba67)
   visit the page with this link:https://www.kelvinkipchumba.dev/
 
 ---
