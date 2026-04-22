@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
 }
 
-/* 1. The Background Image Section */
+/*Background Image Section */
 .hero-section {
   height: 450px;
   background:url('/img/brand2.webp') no-repeat center center/cover;
@@ -91,7 +91,6 @@ body {
   padding: 50px;
   margin-top: -80px; /* This creates the overlap */
   border-radius: 8px 8px 0 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   color: var(--text-dark);
 }
 

@@ -1,21 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
 :root {
-  --primary-color: #0066ff;
-  --primary-dark: #0052cc;
+  --primary-color: #14b8a6;
+  --primary-dark: #0f766e;
   --primary-light: #e6f0ff;
-  --accent-color: #00d4ff;
-  --accent-dark: #00a8cc;
-  --dark-bg: #0f0f0f;
-  --card-bg: #ffffff;
-  --section-bg: #f5f7fa;
-  --text-primary: #1a1a1a;
-  --text-secondary: #666666;
+  --accent-color: #2dd4bf;
+  --accent-dark: #b8962e;
+  --dark-bg:  #0b0b0c;
+  --card-bg:  #121214;
+  --section-bg: #0f0f11;
+  --text-primary: #f5f5f5;
+  --text-secondary: #a1a1aa;
   --border-color: #e8ecf1;
   --success-color: #10b981;
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
-  --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.16);
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
 
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -392,7 +392,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background-color: #ffffff;
+  background-color: var(--dark-bg);
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -438,7 +438,7 @@ a:hover {
 
 /*Navbar */
 .navbar {
-  background: #ffffff;
+  background-color: var(--dark-bg);
   padding: 1.2rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -446,7 +446,6 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid var(--border-color);
 }
 .logo {
@@ -561,9 +560,9 @@ a:hover {
   color: var(--primary-dark);
 }
 
-/* ===== HERO SECTION ===== */
+/*HERO SECTION*/
 #homepage-section {
-  background: linear-gradient(135deg, #ffffff 0%, #f5f7fa 100%);
+  background-color: var(--dark-bg);
   padding: var(--spacing-2xl) var(--spacing-lg);
   min-height: 100vh;
   display: flex;
@@ -681,11 +680,12 @@ a:hover {
   }
 }
 
-/* ===== ABOUT SECTION ===== */
+/*ABOUT SECTION*/
 #About-section {
   padding: var(--spacing-2xl) var(--spacing-lg);
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--dark-bg);
 }
 
 #about {
@@ -707,14 +707,12 @@ a:hover {
   text-align: left;
   padding: var(--spacing-lg);
   background: linear-gradient(135deg, rgba(0, 102, 255, 0.02) 0%, rgba(0, 212, 255, 0.02) 100%);
-  border-left: 4px solid var(--primary-color);
   border-radius: var(--radius-md);
   transition: var(--transition);
 }
 
 .about-text:hover {
   background: linear-gradient(135deg, rgba(0, 102, 255, 0.05) 0%, rgba(0, 212, 255, 0.05) 100%);
-  transform: translateX(8px);
 }
 
 .about-text strong {
@@ -739,7 +737,7 @@ a:hover {
   letter-spacing: 0.5px;
 }
 
-/* ===== SERVICES SECTION ===== */
+/*SERVICES SECTION*/
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -790,10 +788,10 @@ a:hover {
   color: var(--text-secondary);
 }
 
-/* ===== SKILLS SECTION ===== */
+/*SKILLS SECTION*/
 #skills {
   padding: var(--spacing-2xl) var(--spacing-lg);
-  background: var(--section-bg);
+  background-color: var(--dark-bg);
 }
 
 #skills > h2 {
@@ -834,15 +832,14 @@ a:hover {
   transition: var(--transition);
   cursor: pointer;
   min-width: 120px;
-  border: 1px solid rgba(0,0,0,0.06);
-  background: transparent;
-  box-sizing: border-box;
+
+  background: var(--card-bg); 
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
 .skill:hover {
-  background: var(--card-bg);
-  box-shadow: var(--shadow-sm);
-  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.15);
+  background: #161618; /* slightly lighter than card */
 }
 
 .skill img {
@@ -882,7 +879,7 @@ a:hover {
 /* ===== EDUCATION SECTION ===== */
 #education {
   padding: var(--spacing-2xl) var(--spacing-lg);
-  background: linear-gradient(135deg, #ffffff 0%, var(--section-bg) 100%);
+  background-color: var(--dark-bg);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-lg);
@@ -926,7 +923,6 @@ a:hover {
   height: 40px;
   border-radius: 50%;
   border: 3px solid white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .timeline-dot.primary {
@@ -992,7 +988,7 @@ a:hover {
 /*  PROJECTS SECTION */
 #projects-section, #blog {
   padding: var(--spacing-2xl) var(--spacing-lg);
-  background: var(--section-bg);
+  background-color: var(--dark-bg);
 }
 
 #projects-section > h2 {
@@ -1130,7 +1126,6 @@ a:hover {
 
 .btn-live:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 102, 255, 0.3);
 }
 
 .btn-code {
@@ -1148,7 +1143,7 @@ a:hover {
 /* CONTACT SECTION */
 #contact_me {
   padding: var(--spacing-2xl) var(--spacing-lg);
-  background: linear-gradient(135deg, #ffffff 0%, var(--primary-light) 100%);
+  background-color: var(--dark-bg);
 }
 
 #contact_me > h2 {
@@ -1196,19 +1191,20 @@ a:hover {
   width: 100%;
   padding: var(--spacing-sm);
   margin-bottom: var(--spacing-md);
-  border: 1px solid var(--border-color);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: var(--radius-md);
   font-family: var(--font-body);
   font-size: 1rem;
   transition: var(--transition);
-  background: #ffffff;
+  background: var(--card-bg);   
+  color: var(--text-primary);  
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: none;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
 }
 
 .contact-form textarea {
@@ -1228,12 +1224,10 @@ a:hover {
   font-size: 1rem;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
 }
 
 .contact-form button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 15px 35px rgba(0, 102, 255, 0.3);
 }
 
 .contact-info-cards {
@@ -1247,13 +1241,11 @@ a:hover {
   padding: var(--spacing-md);
   background: linear-gradient(135deg, rgba(0, 102, 255, 0.02) 0%, rgba(0, 212, 255, 0.02) 100%);
   border-radius: var(--radius-md);
-  border-left: 3px solid var(--primary-color);
   transition: var(--transition);
 }
 
 .contact-info-card:hover {
   background: linear-gradient(135deg, rgba(0, 102, 255, 0.06) 0%, rgba(0, 212, 255, 0.06) 100%);
-  transform: translateX(6px);
 }
 
 .contact-icon {
@@ -1352,12 +1344,10 @@ a:hover {
   border-radius: var(--radius-md);
   font-weight: 600;
   transition: var(--transition);
-  box-shadow: 0 10px 25px rgba(0, 102, 255, 0.2);
 }
 
 .back-to-top:hover {
   transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(0, 102, 255, 0.3);
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
