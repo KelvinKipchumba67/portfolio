@@ -446,7 +446,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 0px solid var(--border-color);
 }
 .logo {
   font-family: var(--font-heading);
@@ -518,12 +518,13 @@ a:hover {
     top: 100%;
     left: 0;
     right: 0;
-    background: white;
+    background: var(--dark-bg);
     flex-direction: column;
     gap: 0;
     display: none;
     padding: var(--spacing-md);
     box-shadow: var(--shadow-md);
+    z-index: 1001;
   }
 
   .nav-links.active {
@@ -534,10 +535,11 @@ a:hover {
     display: block;
     padding: var(--spacing-md);
     border-radius: var(--radius-sm);
+    color: var(--text-primary);
   }
 
   .nav-links a:hover {
-    background-color: var(--primary-light);
+    background-color: var(--card-bg);
   }
 
   .nav-links a::after {
@@ -862,12 +864,14 @@ a:hover {
 
 @media (max-width: 768px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--spacing-md);
   }
 
   .skill {
     padding: var(--spacing-sm);
+    min-width: 0;
+    width: 100%;
   }
 
   .skill img {
@@ -876,7 +880,7 @@ a:hover {
   }
 }
 
-/* ===== EDUCATION SECTION ===== */
+/*EDUCATION SECTION*/
 #education {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: var(--dark-bg);
@@ -1289,7 +1293,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ===== FOOTER ===== */
+/*FOOTER*/
 .site-footer {
   background: var(--dark-bg);
   color: #999;
@@ -1350,7 +1354,7 @@ a:hover {
   transform: translateY(-4px);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/*RESPONSIVE DESIGN*/
 @media (max-width: 1024px) {
   .services {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -1429,7 +1433,7 @@ a:hover {
   }
 
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .skill img {
@@ -1438,7 +1442,17 @@ a:hover {
   }
 }
 
-/* ===== ANIMATIONS ===== */
+@media (max-width: 360px) {
+  #skills .skills-grid {
+    gap: var(--spacing-sm);
+  }
+
+  #skills .skill p {
+    font-size: 0.85rem;
+  }
+}
+
+/*ANIMATIONS*/
 @keyframes slideInUp {
   from {
     opacity: 0;
@@ -1466,7 +1480,7 @@ a:hover {
   animation: slideInUp 0.6s ease-out;
 }
 
-/* ===== SCROLLBAR ===== */
+/*SCROLLBAR */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
