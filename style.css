@@ -638,6 +638,7 @@ a:hover {
     padding: var(--spacing-md);
     box-shadow: var(--shadow-md);
     z-index: 1001;
+    color:var(--text-primary);
   }
 
   .nav-links.active {
@@ -1281,7 +1282,7 @@ a:hover {
 
 /* CONTACT SECTION */
 #contact_me {
-  padding: var(--spacing-2xl) var(--spacing-lg);
+  padding: var(--spacing-lg) var(--spacing-lg);
   background-color: var(--dark-bg);
 }
 
@@ -1295,7 +1296,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: var(--spacing-xl);
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
