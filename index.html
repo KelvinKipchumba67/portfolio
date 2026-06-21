@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelvin Kipchumba - Full Stack Developer & Designer</title>
-    <link rel="icon" type="image/svg" href="img/favicon.svg">
+    <link rel="icon" type="image/svg" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
@@ -339,27 +339,30 @@
  </section>
 
 <!-- This is the contact me section by ofcourse Kelvin -->
-  <section id="contact_me">
-    <h2 id="contact">Get In Touch</h2>
+<section id="contact_me">
+  <h2 id="contact">Get In Touch</h2>
 
-    <div class="contact-wrapper">
-      <div class="contact-form-section">
-        <h3>Send a Message</h3>
-        <form action="https://formspree.io/f/movgkwgn" method="POST" class="contact-form">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+  <div class="contact-wrapper">
+    <div class="contact-form-section">
+      <h3>Send a Message</h3>
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+      <form id="contact-form" class="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
 
-          <label for="subject">Subject</label>
-          <input type="text" id="subject" name="subject" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" required></textarea>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
 
-          <button type="submit">Send Message</button>
-        </form>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <p id="status-msg" style="display:none; margin-bottom: 1rem;"></p>
+
+        <button type="submit" id="submit-btn">Send Message</button>
+      </form>
       </div>
 
       <div class="contact-info-section">
@@ -404,6 +407,40 @@
       </div>
     </div>
   </section>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("9oM55_wfdQZNhtVOO");
+
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const btn = document.getElementById("submit-btn");
+    const status = document.getElementById("status-msg");
+
+    btn.textContent = "Sending...";
+    btn.disabled = true;
+    status.style.display = "none";
+
+    emailjs.sendForm("service_r5nb1bx", "template_k4ks9vm", this)
+            .then(() => {
+              status.textContent = "Message sent successfully";
+              status.style.display = "block";
+              status.style.color = "#4ade80";
+              btn.textContent = "Send Message";
+              btn.disabled = false;
+              document.getElementById("contact-form").reset();
+            })
+            .catch((error) => {
+              status.textContent = "Failed to send. Please try again.";
+              status.style.display = "block";
+              status.style.color = "#f87171";
+              btn.textContent = "Send Message";
+              btn.disabled = false;
+              console.error(error);
+            });
+  });
+</script>
 
   <footer class="site-footer">
     <div class="social-links">
