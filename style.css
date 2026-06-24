@@ -365,8 +365,6 @@
   margin: 0 auto;
   padding: 20px;
 }
-
-/* Article styling */
 .content h3 {
   margin-top: 1.5rem;
   color: var(--primary-color);
@@ -445,8 +443,6 @@ a {
 a:hover {
   color: var(--primary-dark);
 }
-
-/* new navbar styling */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -454,10 +450,9 @@ a:hover {
   padding: 20px 40px;
   background-color: #050505;
   color: white;
-  font-family: 'Inter', sans-serif; /* A clean font works best here */
+  font-family: 'Inter', sans-serif;
 }
 
-/* Logo and Profile Section (Ref: image_856b37.png) */
 .logo-container {
   display: flex;
   align-items: center;
@@ -516,22 +511,16 @@ a:hover {
   transition: all 0.3s ease;
   
 }
-
-/* Individual Border Colors */
 .link-about { border-color: rgba(30, 58, 138, 0.3); }
 .link-skills { border-color: rgba(127, 29, 29, 0.3); }
 .link-projects { border-color: rgba(120, 113, 108, 0.3); }
 .link-blogs { border-color: rgba(6, 78, 59, 0.3); }
 .link-contact { border-color: rgba(20, 83, 45, 0.3); }
-
-/* Hover Effects */
 .nav-links a:hover {
   background-color: rgba(255, 255, 255, 0.05);
   color: white;
   border-color: rgba(255, 255, 255, 0.2);
 }
-
-/* Mobile Toggle - Basic visibility */
 .menu-toggle {
   display: none;
   background: none;
@@ -543,7 +532,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .menu-toggle { display: block; }
-  .nav-links { display: none; } /* Add your JS logic to toggle this */
+  .nav-links { display: none; }
 }
 
 
@@ -675,8 +664,6 @@ a {
 a:hover {
   color: var(--primary-dark);
 }
-
-/*HERO SECTION*/
 #homepage-section {
   background-color: var(--dark-bg);
   padding: var(--spacing-2xl) var(--spacing-lg);
@@ -809,8 +796,6 @@ a:hover {
     font-size: clamp(1.5rem, 5vw, 2.5rem);
   }
 }
-
-/*ABOUT SECTION*/
 #About-section {
   padding: var(--spacing-2xl) var(--spacing-lg);
   max-width: 1200px;
@@ -866,8 +851,6 @@ a:hover {
   background-clip: text;
   letter-spacing: 0.5px;
 }
-
-/*SERVICES SECTION*/
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -917,8 +900,6 @@ a:hover {
   font-size: 0.95rem;
   color: var(--text-secondary);
 }
-
-/*SKILLS SECTION*/
 #skills {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: var(--dark-bg);
@@ -944,8 +925,6 @@ a:hover {
   margin: 0 auto;
   justify-items: center;
 }
-
-/* Specific tighter layout for the Other Skills small list */
 #skills .skills-grid.other-skills {
   gap: var(--spacing-sm);
   max-width: 520px;
@@ -1008,8 +987,6 @@ a:hover {
     height: 48px;
   }
 }
-
-/*EDUCATION SECTION*/
 #education {
   padding: var(--spacing-2xl) var(--spacing-lg);
   background-color: var(--dark-bg);
@@ -1117,8 +1094,6 @@ a:hover {
   margin: 0;
   flex-grow: 1;
 }
-
-/*  PROJECTS SECTION */
 #projects-section,
 #blog {
   padding: var(--spacing-2xl) var(--spacing-lg);
@@ -1429,8 +1404,8 @@ a:hover {
   text-decoration: underline;
 }
 
-/*FOOTER*/
 .site-footer {
+  min-width: max-content;
   background: var(--dark-bg);
   color: #999;
   padding: var(--spacing-xl) var(--spacing-lg);
