@@ -337,86 +337,73 @@
  </section>
 
 <!--cta section-->
-<div style="border-radius:16px; padding:80px 40px; text-align:center; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:32px;">
-  <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:0.5px solid rgba(255,255,255,0.15); border-radius:999px; padding:6px 16px;">
-    <span style="width:8px; height:8px; background:#0ee4c4; border-radius:50%; display:inline-block; box-shadow:0 0 6px #4ade80;"></span>
-    <span style="font-size:11px; font-weight:500; letter-spacing:0.1em; color:rgba(255,255,255,0.85); text-transform:uppercase;">Have a project in mind?</span>
-  </div>
-  <h1 style="font-size:clamp(36px,7vw,72px); font-weight:700; color:#fff; line-height:1.1; margin:0; font-family:'Inter', sans-serif;">
-    Let's Turn your Ideas<br>into Visual Stories
-  </h1>
-  <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
-    <a href="mailto:hello@yourname.com" style="display:inline-flex; align-items:center; gap:10px; font-size:clamp(16px,2.5vw,22px); font-weight:500; color:#fff; text-decoration:none;">
-      <span style="opacity:0.7;">↳</span>
-      kelvinkipchumba935@gmail.com
-    </a>
-    <div style="width:100%; height:0.5px; background:rgba(255,255,255,0.25); margin-top:4px;"></div>
-  </div>
+<section style="margin: 20px">
+  <div style="border-radius:16px; padding:80px 40px; text-align:center; min-height:320px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:32px; margin-bottom: 40px">
+    <div style="display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.08); border:0.5px solid rgba(255,255,255,0.15); border-radius:999px; padding:6px 16px;">
+      <span style="width:8px; height:8px; background:#0ee4c4; border-radius:50%; display:inline-block; box-shadow:0 0 6px #4ade80;"></span>
+      <span style="font-size:11px; font-weight:500; letter-spacing:0.1em; color:rgba(255,255,255,0.85); text-transform:uppercase;">Have a project in mind?</span>
+    </div>
+    <h1 style="font-size:clamp(36px,7vw,72px); font-weight:700; color:#fff; line-height:1.1; margin:0; font-family:'Inter', sans-serif;">
+      Let's Turn your Ideas<br>into Visual Stories
+    </h1>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:6px;">
+      <a href="mailto:hello@yourname.com" style="display:inline-flex; align-items:center; gap:10px; font-size:clamp(16px,2.5vw,22px); font-weight:500; color:#fff; text-decoration:none;">
+        <span style="opacity:0.7;">↳</span>
+        kelvinkipchumba935@gmail.com
+      </a>
+      <div style="width:100%; height:0.5px; background:rgba(255,255,255,0.25); margin-top:4px;"></div>
+    </div>
+</section>
 
-<!-- This is the contact me section by ofcourse Kelvin -->
-<section id="contact_me">
-  <h2 id="contact">Get In Touch</h2>
 
-  <div class="contact-wrapper">
-    <div class="contact-form-section">
-      <h3>Send a Message</h3>
+<!--this is the new contact section, I have attachment issues with code-->
+  <section id="contact_me"
+          style="align-items: center;"
+          class="contact-container">
+    <div class="contact-tag">
+      <i class="fa-solid fa-reply-all fa-flip-horizontal"></i> CONTACT
+    </div>
+    <div class="header-text">
+      <h1>Start a <span>conversation.</span></h1>
+      <p>Currently open to new opportunities. If you have a project in mind or just want to chat about tech, feel free to drop a message below</p>
+    </div>
 
-      <form id="contact-form" class="contact-form">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+    <div class="content-grid">
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+      <div class="form-wrapper">
+        <form id="contact-form" class="contact-form">
+          <div class="input-group">
+            <label>NAME</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="input-group">
+            <label>EMAIL</label>
+            <input type="email" placeholder="your@email">
+          </div>
+          <div class="input-group textarea-wrapper">
+            <label>MESSAGE</label>
+            <textarea placeholder="What would you like to talk about?" rows="1"></textarea>
+            <i class="fa-solid fa-signal textarea-resize-icon" style="transform: rotate(45deg);"></i>
+          </div>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="subject" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <p id="status-msg" style="display:none; margin-bottom: 1rem;"></p>
-
-        <button type="submit" id="submit-btn">Send Message</button>
-      </form>
+          <div class="form-actions">
+            <button type="submit" class="btn-contact" id="submit-btn">
+              SUBMIT <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
+            </button>
+          </div>
+          <p id="status-msg" style="display: none; margin-top: 1.5rem; font-weight: 600; letter-spacing: 1px;"></p>
+        </form>
       </div>
 
-      <div class="contact-info-section">
-        <h3>Contact Information</h3>
-        <div class="contact-info-cards">
-          <div class="contact-info-card">
-            <!-- <span class="contact-icon">✉</span> -->
-            <div class="contact-info-content">
-              <p class="contact-label">Email</p>
-              <a href="mailto:kelvinkipchumba935@gmail.com">kelvinkipchumba935@gmail.com</a>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <!-- <span class="contact-icon">📞</span> -->
-            <div class="contact-info-content">
-              <p class="contact-label">Phone</p>
-              <a href="tel:+254115313728">+254 115313728</a>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <!-- <span class="contact-icon">📍</span> -->
-            <div class="contact-info-content">
-              <p class="contact-label">Location</p>
-              <p>Nairobi, Kenya</p>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <!-- <span class="contact-icon">💼</span> -->
-            <div class="contact-info-content">
-              <p class="contact-label">LinkedIn</p>
-              <a href="https://www.linkedin.com/in/kelvin-kipchumba67" target="_blank">Connect with me</a>
-            </div>
-          </div>
-          <div class="contact-info-card">
-            <!-- <span class="contact-icon">💻</span> -->
-            <div class="contact-info-content">
-              <p class="contact-label">GitHub</p>
-              <a href="https://github.com/KelvinKipchumba67" target="_blank">View my code</a>
-            </div>
+      <div class="social-wrapper">
+        <div class="cube-container">
+          <div class="rotating-cube">
+            <div class="cube-face face-front">Branding</div>
+            <div class="cube-face face-back">Design</div>
+            <div class="cube-face face-right">Web</div>
+            <div class="cube-face face-left">Branding</div>
+            <div class="cube-face face-top">Creative</div>
+            <div class="cube-face face-bottom">Code</div>
           </div>
         </div>
       </div>
@@ -456,20 +443,43 @@
             });
   });
 </script>
-
-  <footer class="site-footer">
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/kelvin-kipchumba-a03980332/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-        <img src="img/linkedin.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/KelvinKipchumba67" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-      </a>
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul class="footer-nav">
+        <li><a href="#About-section">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects-section">Projects</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="./services/services.html">Services</a></li>
+        <li><a href="#contact_me">Contact</a></li>
+      </ul>
     </div>
-    <a href="#top" class="back-to-top">↑ Back to Top</a>
+    <div class="footer-section">
+      <h4>Contact Me</h4>
+      <ul class="footer-contact">
+        <li><a href="tel:+254700000000"> +2547115313728</a></li>
+        <li><a href="mailto:your@email.com">kelvinkipchumba935@email.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Connect</h4>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/kelvin-kipchumba-a03980332/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <img src="img/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://github.com/KelvinKipchumba67" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
     <p>&copy; 2026 Kelvin Kipchumba. All rights reserved.</p>
-    
-  </footer>
+  </div>
+</footer>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
