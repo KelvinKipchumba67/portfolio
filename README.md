@@ -1,6 +1,6 @@
 # Kelvin Kipchumba – Portfolio Website
 
-Welcome to my personal portfolio website. This site showcases who I am as a **Full-Stack Developer** and **Graphics Designer**. It includes sections about my background, skills, education, and some of the projects I've worked on.
+Welcome to my personal portfolio website. This site showcases who I am as a **Full-Stack Developer** and **Graphics Designer**. It includes sections about my background, skills, education,services and some of the projects I've worked on.
 
 visit the page with this link:https://www.kelvinkipchumba.dev/
 
@@ -14,6 +14,7 @@ This is a static HTML/CSS/JS website with the following sections:
 - **Educational Background**
 - **Projects**
 - **Blogs**
+- **Services**
 - **Contact Me**
 
 ---
@@ -22,7 +23,6 @@ This is a static HTML/CSS/JS website with the following sections:
 
 - Responsive layout with organized sections
 - Creative and intuitive UI design
-- Detailed educational background cards
 - Showcases real design and development projects
 - Includes a functional contact form layout and a Blog
 - Back to Top navigation for easy scrolling
