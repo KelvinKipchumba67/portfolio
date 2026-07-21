@@ -32,6 +32,15 @@ body {
   text-align: center;
   color: white;
 }
+.hero-section-branding{
+  height: 450px;
+  background:url('/img/branding2.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 .hero-section-context{
   height: 450px;
   background:url('/img/pic.webp') no-repeat center center/cover;
@@ -69,6 +78,12 @@ body {
 }
 .h1-blogdesign{
   color: white;
+}
+.h1-brandingdesign{
+  color: #14b8a6;
+}
+.reasonsheader{
+  color: black;
 }
 .contexth1{
   color: white;
