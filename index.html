@@ -386,15 +386,15 @@
         <form id="contact-form" class="contact-form">
           <div class="input-group">
             <label>NAME</label>
-            <input type="text" placeholder="Your name">
+            <input name="name" type="text" placeholder="Your name" required>
           </div>
           <div class="input-group">
             <label>EMAIL</label>
-            <input type="email" placeholder="your@email">
+            <input name="email" type="email" placeholder="your@email" required>
           </div>
           <div class="input-group textarea-wrapper">
             <label>MESSAGE</label>
-            <textarea placeholder="What would you like to talk about?" rows="1"></textarea>
+            <textarea  name="message" placeholder="What would you like to talk about?" rows="1" required></textarea>
             <i class="fa-solid fa-signal textarea-resize-icon" style="transform: rotate(45deg);"></i>
           </div>
 
@@ -436,7 +436,7 @@
     btn.disabled = true;
     status.style.display = "none";
 
-    emailjs.sendForm("service_r5nb1bx", "template_k4ks9vm", this)
+    emailjs.sendForm("service_r5nb1bx", "template_p3wpj07", this)
             .then(() => {
               status.textContent = "Message sent successfully";
               status.style.display = "block";
