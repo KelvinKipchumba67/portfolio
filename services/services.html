@@ -141,7 +141,7 @@
             <li><a href="/index.html#skills" class="link-skills">Skills</a></li>
             <li><a href="/index.html#projects" class="link-projects">Projects</a></li>
             <li><a href="/blogpage.html" class="link-blogs">Blogs</a></li>
-            <li><a href="/index.html#contact" class="link-contact">Contact</a></li>
+            <li><a href="#contact_me" class="link-contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -244,26 +244,27 @@
         <div class="content-grid">
 
             <div class="form-wrapper">
-                <form id="contact-form" action="#" method="POST">
+                <form id="contact-form"  class="contact-form"  action="#" method="POST">
                     <div class="input-group">
                         <label>NAME</label>
-                        <input type="text" placeholder="Your name">
+                        <input name="name" type="text" placeholder="Your name" required>
                     </div>
                     <div class="input-group">
                         <label>EMAIL</label>
-                        <input type="email" placeholder="your@email">
+                        <input name="email" type="email" placeholder="your@email" required>
                     </div>
                     <div class="input-group textarea-wrapper">
                         <label>MESSAGE</label>
-                        <textarea placeholder="What would you like to talk about?" rows="1"></textarea>
+                        <textarea name="message" placeholder="What would you like to talk about?" rows="1" required></textarea>
                         <i class="fa-solid fa-signal textarea-resize-icon" style="transform: rotate(45deg);"></i>
                     </div>
 
                     <div class="form-actions">
-                        <button type="submit" class="btn-continue">
+                        <button type="submit" class="btn-contact" id="submit-btn">
                             SUBMIT <i class="fa-solid fa-chevron-right" style="font-size: 0.7rem;"></i>
                         </button>
                     </div>
+                    <p id="status-msg" style="display: none; margin-top: 1.5rem; font-weight: 600; letter-spacing: 1px;"></p>
                 </form>
             </div>
 
@@ -318,7 +319,40 @@
             <p>&copy; 2026 Kelvin Kipchumba. All rights reserved.</p>
         </div>
     </footer>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    emailjs.init("9oM55_wfdQZNhtVOO");
 
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const btn = document.getElementById("submit-btn");
+        const status = document.getElementById("status-msg");
+
+        btn.textContent = "Sending...";
+        btn.disabled = true;
+        status.style.display = "none";
+
+        emailjs.sendForm("service_r5nb1bx", "template_p3wpj07", this)
+            .then(() => {
+                status.textContent = "Message sent successfully";
+                status.style.display = "block";
+                status.style.color = "#4ade80";
+                btn.textContent = "Send Message";
+                btn.disabled = false;
+                document.getElementById("contact-form").reset();
+            })
+            .catch((error) => {
+                status.textContent = "Failed to send. Please try again.";
+                status.style.display = "block";
+                status.style.color = "#f87171";
+                btn.textContent = "Send Message";
+                btn.disabled = false;
+                console.error(error);
+            });
+    });
+</script>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const toggleButton = document.querySelector(".menu-toggle");
