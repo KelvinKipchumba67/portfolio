@@ -43,4 +43,10 @@
         <priority>0.6</priority>
     </url>
 
+    <url>
+        <loc>https://www.kelvinkipchumba.dev/blogs/communication.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
