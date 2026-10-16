@@ -59,6 +59,15 @@ body {
   text-align: center;
   color: white;
 }
+.hero-section-communication{
+  height: 450px;
+  background:url('/img/comskills.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 .meta{
   color: #00d4ff;
 }
