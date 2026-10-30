@@ -1,5 +1,3 @@
-/* Design gallery: all classes are prefixed "design-" so nothing clashes with your existing CSS.
-   Adjust the variables to match your site's colors. */
 #design-section {
     --design-bg: #141414;
     --design-bar: rgba(20, 20, 20, 0.92);
@@ -9,8 +7,6 @@
     --design-btn-text: #0a0a0a;
     --design-radius: 14px;
 
-    /* Side padding so content isn't flush to the edge.
-       Remove these two lines if you place the section inside your existing container. */
     padding: 4rem clamp(1rem, 5vw, 4rem);
     max-width: 1200px;
     margin-inline: auto;
@@ -89,8 +85,6 @@
     font-size: 0.85rem;
     opacity: 0.75;
 }
-
-/* ---------- Viewer ---------- */
 .design-viewer {
     width: 100%;
     height: 100%;
