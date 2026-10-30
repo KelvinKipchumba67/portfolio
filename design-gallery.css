@@ -1,0 +1,195 @@
+/* Design gallery: all classes are prefixed "design-" so nothing clashes with your existing CSS.
+   Adjust the variables to match your site's colors. */
+#design-section {
+    --design-bg: #141414;
+    --design-bar: rgba(20, 20, 20, 0.92);
+    --design-text: #f2f2f2;
+    --design-muted: #9a9a9a;
+    --design-btn: #14b8a6; /* teal accent, change to match your site */
+    --design-btn-text: #0a0a0a;
+    --design-radius: 14px;
+
+    /* Side padding so content isn't flush to the edge.
+       Remove these two lines if you place the section inside your existing container. */
+    padding: 4rem clamp(1rem, 5vw, 4rem);
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+/* Center the heading and the intro text */
+#design-section > h2,
+#design-section > .design-intro {
+    text-align: center;
+}
+
+.design-intro {
+    max-width: 60ch;
+    margin: 0.5rem auto 2rem;
+    opacity: 0.8;
+}
+
+/* ---------- Grid of cards ---------- */
+.design-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.design-card {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    padding: 0;
+    border: 0;
+    border-radius: var(--design-radius);
+    overflow: hidden;
+    background: #ddd;
+    cursor: pointer;
+    text-align: left;
+    font: inherit;
+}
+
+.design-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.design-card:hover img,
+.design-card:focus-visible img {
+    transform: scale(1.05);
+}
+
+.design-card:focus-visible {
+    outline: 3px solid currentColor;
+    outline-offset: 4px;
+}
+
+.design-card-caption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: 3.5rem 1rem 1rem;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.82), transparent);
+}
+
+.design-card-caption strong {
+    display: block;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.design-card-caption span {
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
+
+/* ---------- Viewer ---------- */
+.design-viewer {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.design-viewer::backdrop {
+    background: rgba(0, 0, 0, 0.72);
+    backdrop-filter: blur(4px);
+}
+
+.design-viewer-scroll {
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-y: auto;
+    background: var(--design-bg);
+    color: var(--design-text);
+}
+
+@media (min-width: 700px) {
+    .design-viewer-scroll {
+        height: calc(100% - 3rem);
+        margin-block: 1.5rem;
+        border-radius: 18px;
+    }
+}
+
+.design-viewer-bar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--design-bar);
+    backdrop-filter: blur(8px);
+}
+
+.design-viewer-bar button {
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 999px;
+    background: var(--design-btn);
+    color: var(--design-btn-text);
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.design-viewer-bar div {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.design-viewer-head {
+    padding: 1.5rem clamp(1.25rem, 5vw, 3rem) 2rem;
+}
+
+.design-viewer-head h3 {
+    margin: 0;
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    line-height: 1.15;
+}
+
+.design-viewer-head p {
+    margin: 0.75rem 0 0;
+    max-width: 65ch;
+    color: var(--design-muted);
+}
+
+#design-viewer-meta {
+    font-size: 0.9rem;
+}
+
+.design-viewer-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 clamp(1rem, 5vw, 3rem) 3rem;
+}
+
+.design-viewer-pages img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .design-card img {
+        transition: none;
+    }
+}
