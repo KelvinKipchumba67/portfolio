@@ -18,6 +18,7 @@
     <title>Kelvin Kipchumba - Full Stack Developer & Designer</title>
     <link rel="icon" type="image/svg" href="img/favicon.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="design-gallery.css">
 </head>
 <body id="top">
 <nav class="navbar">
@@ -265,6 +266,32 @@
     </section>
   </section>
 
+
+<section id="design-section">
+  <h2 id="design">Design Work</h2>
+  <p class="design-intro">Brand identities, logos and campaign visuals. Click a project to see the full case.</p>
+
+  <ul class="design-grid" id="design-grid"></ul>
+
+  <dialog class="design-viewer" id="design-viewer" aria-labelledby="design-viewer-title">
+    <div class="design-viewer-scroll" id="design-viewer-scroll">
+      <div class="design-viewer-bar">
+        <div>
+          <button type="button" id="design-prev">Previous</button>
+          <button type="button" id="design-next">Next</button>
+        </div>
+        <button type="button" id="design-close">Close</button>
+      </div>
+      <header class="design-viewer-head">
+        <h3 id="design-viewer-title"></h3>
+        <p id="design-viewer-desc"></p>
+        <p id="design-viewer-meta"></p>
+      </header>
+      <div class="design-viewer-pages" id="design-viewer-pages"></div>
+    </div>
+  </dialog>
+</section>
+<script src="design-gallery.js"></script>
 
 
 
