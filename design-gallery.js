@@ -113,6 +113,28 @@ const designProjects = [
             "img/design/signupaiesec/page6.png",
         ],
     },
+
+    {
+        slug: "Kienyeji foods brochure and flyer designs ",
+        title: "Kienyeji foods brochure and flyer designs ",
+        description: "Brochure and flyer designs for kienyeji foods.",
+        category: "Campaign Design",
+        year: "2026",
+        tools: ["Illustrator"],
+        cover: "img/design/kienyeji-foods/cover.png",
+        pages: [
+            "img/design/kienyeji-foods/page1.png",
+            "img/design/kienyeji-foods/cover.png",
+            "img/design/kienyeji-foods/page2.png",
+            "img/design/kienyeji-foods/page3.png",
+            "img/design/kienyeji-foods/page4.png",
+            "img/design/kienyeji-foods/page5.png",
+            "img/design/kienyeji-foods/page6.png",
+            "img/design/kienyeji-foods/page7.png",
+        ],
+    },
+
+
 ];
 
 
