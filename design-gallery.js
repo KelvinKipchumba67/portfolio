@@ -134,6 +134,20 @@ const designProjects = [
         ],
     },
 
+    {
+        slug: "Amani wellness brochure design ",
+        title: "Amani wellness brochure design ",
+        description: "Brochure design for Amani wellness.",
+        category: "Campaign Design",
+        year: "2026",
+        tools: ["Illustrator"],
+        cover: "img/design/amani-wellness/cover.png",
+        pages: [
+            "img/design/amani-wellness/cover.png",
+            "img/design/amani-wellness/page1.png",
+        ],
+    },
+
 
 ];
 
