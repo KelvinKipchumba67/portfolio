@@ -347,8 +347,10 @@
   color: aqua;
 }
 
-.blogheader,
-.blogsubheader {
+.blogheader{
+  text-align: center;
+}
+.blogsubheader{
   text-align: center;
   padding: 30px !important;
 }
@@ -1090,7 +1092,6 @@ a:hover {
 
 #projects-section>h2 {
   text-align: center;
-  margin-bottom: var(--spacing-xl);
 }
 
 .projects-list,
