@@ -148,6 +148,24 @@ const designProjects = [
         ],
     },
 
+    {
+        slug: "Zinduka campaign design",
+        title: "Zinduka campaign design",
+        description: "Flyers and designs for Zinduka",
+        category: "Campaign Design",
+        year: "2025",
+        tools: ["Illustrator"],
+        cover: "img/design/zinduka/flyer.jpg",
+        pages: [
+            "img/design/zinduka/flyer.jpg",
+            "img/design/zinduka/movie-flyer.png",
+            "img/design/zinduka/reveal.jpg",
+            "img/design/zinduka/MkT.png",
+            "img/design/zinduka/thank-flyer.jpg",
+            "img/design/zinduka/ticket.jpg",
+        ],
+    },
+
 
 ];
 
