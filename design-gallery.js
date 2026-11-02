@@ -33,6 +33,7 @@ const designProjects = [
             "img/design/bonfire-night/02-social-partner.png",
             "img/design/bonfire-night/03-social-ticket.png",
             "img/design/bonfire-night/04-social-CUNSA.png",
+            "img/design/bonfire-night/Bonfire-ticket-value.png",
             "img/design/bonfire-night/05-mascot.png",
         ],
     },
