@@ -68,6 +68,15 @@ body {
   text-align: center;
   color: white;
 }
+.hero-section-sdlc-ai-age{
+  height: 450px;
+  background:url('/img/SDLC-ai-age.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
 .meta{
   color: #00d4ff;
 }
@@ -90,6 +99,9 @@ body {
 }
 .h1-brandingdesign{
   color: #14b8a6;
+}
+.title-sdlc{
+  color: black;
 }
 .reasonsheader{
   color: black;
